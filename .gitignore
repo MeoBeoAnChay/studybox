@@ -1,0 +1,14 @@
+target/
+.runtime/
+*.log
+*.iml
+.idea/
+.classpath
+.project
+.settings/
+.vscode/
+*.swp
+Thumbs.db
+node_modules/
+dist/
+build/

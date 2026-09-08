@@ -1,0 +1,18 @@
+<c:if test="${not empty flashSuccess}">
+    <div class="flash flash-success"><c:out value="${flashSuccess}"/></div>
+</c:if>
+
+<c:if test="${not empty flashError}">
+    <div class="flash flash-error"><c:out value="${flashError}"/></div>
+</c:if>
+
+<c:if test="${not empty errors}">
+    <div class="flash flash-error">
+        <strong>Vui lòng kiểm tra lại:</strong>
+        <ul style="margin: 10px 0 0; padding-left: 18px;">
+            <c:forEach items="${errors}" var="error">
+                <li><c:out value="${error}"/></li>
+            </c:forEach>
+        </ul>
+    </div>
+</c:if>
